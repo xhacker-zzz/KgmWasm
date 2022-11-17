@@ -89,7 +89,7 @@ std::vector<uint8_t> key(17);
 bool isVpr = false;
 
 size_t PreDec(uint8_t* fileData, size_t size, bool iV) {
-    uint32_t headerLen = *((uint32_t*)(fileData + 0x10));
+    uint32_t headerLen = *(uint32_t*)(fileData + 0x10);
     memcpy(key.data(), (fileData + 0x1C), 0x10);
     key[16] = 0;
     isVpr = iV;
