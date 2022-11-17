@@ -10,7 +10,7 @@
 
 size_t preDec(uintptr_t blob, size_t blobSize, std::string ext)
 {
-    return PreDecode((uint8_t*)blob, blobSize, ext == "vpr");
+    return PreDec((uint8_t*)blob, blobSize, ext == "vpr");
 }
 
 void decBlob(uintptr_t blob, size_t blobSize, size_t offset)

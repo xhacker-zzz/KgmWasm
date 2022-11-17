@@ -8,8 +8,8 @@
 
 namespace em = emscripten;
 
-int preDec(uintptr_t blob, size_t blobSize, std::string ext);
-size_t decBlob(uintptr_t blob, size_t blobSize, size_t offset);
+size_t preDec(uintptr_t blob, size_t blobSize, std::string ext);
+void decBlob(uintptr_t blob, size_t blobSize, size_t offset);
 
 EMSCRIPTEN_BINDINGS(QmcCrypto)
 {
